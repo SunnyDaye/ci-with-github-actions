@@ -4,7 +4,8 @@
   "description": "Import this repo to create a starting point for Node.js projects in repl.it, https://replit.com",
   "main": "index.js",
   "scripts": {
-    "test": "mocha || true"
+    "test": "mocha || true",
+    "coverage": "nyc npm run test"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,8 @@
   "homepage": "https://github.com/SunnyDaye/js-testing-mocha-chai#readme",
   "devDependencies": {
     "chai": "^4.3.7",
-    "mocha": "^10.2.0"
+    "chai-asserttype": "^1.0.5",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0"
   }
 }
